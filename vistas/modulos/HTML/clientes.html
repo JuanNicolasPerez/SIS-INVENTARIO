@@ -1,0 +1,251 @@
+<div class="content-wrapper">
+
+    <section class="content-header">
+        <h1>
+            Administrar Clientes
+        </h1>
+        <ol class="breadcrumb">
+            <li><a href="inicio"><i class="fa fa-dashboard"></i> Inicio </a></li>
+            <li class="active">Administrar Clientes</li>
+        </ol>
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+        <!-- Modal box -->
+        <div class="box">
+            <div class="box-header with-border">
+                <button class="btn btn-primary" data-toggle="modal" data-target="#modalAgregarCliente">
+                    Agregar Clientes
+                </button>
+            </div>
+
+            <!-- /.box-body -->
+            <div class="box-body">
+                <table class="table table-bordered table-striped dt-responsive tablas" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th style="width:10px">#</th>
+                            <th>Nombre </th>
+                            <th>Documento</th>
+                            <th>Email</th>
+                            <th>Telefono</th>
+                            <th>Direccion</th>
+                            <th>Fecha de nacimiento</th>
+                            <th>Total de compras</th>
+                            <th>Ultima compra</th>
+                            <th>Ingreso sistema</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <th>#</th>
+                            <th>n</th>
+                            <th>d</th>
+                            <th>e</th>
+                            <th>t</th>
+                            <th>d</th>
+                            <th>f</th>
+                            <th>t</th>
+                            <th>u</th>
+                            <th>i</th>
+                            <th>a</th>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- /.box-body -->
+        </div>
+        <!-- /.Modal box -->
+    </section>
+    <!-- /.Main content -->
+</div>
+
+<!--==============================
+MODAL AGREGAR CLIENTES
+===============================-->
+<div id="modalAgregarCliente" class="modal fade" role="dialog">
+
+    <div class="modal-dialog">
+
+        <div class="modal-content">
+
+            <form role="form" method="post">
+
+                <!-- CABEZA DE MODAL-->
+                <div class="modal-header" style="background:#3c8dbc; color:white">
+                    <button type="button" class="close" data-dismiss="modal">x</button>
+                    <h4 class="modal-title"> Agregar Clientes </h4>
+                </div>
+
+                <!-- CUERPO DE MODAL-->
+                <div class="modal-body">
+                    <div class="box-body">
+                        <!-- Entrada Nombre-->
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                <input type="text" class="form-control input-lg" name="nuevoCliente"
+                                    placeholder="Ingresar Cliente" required>
+                            </div>
+                        </div>
+
+                        <!-- Entrada Documento-->
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-key"></i></span>
+                                <input type="number" min="0" class="form-control input-lg" name="nuevoDocumneto"
+                                    placeholder="Ingresar Documento" required>
+                            </div>
+                        </div>
+
+                        <!-- Entrada Email-->
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                                <input type="email" class="form-control input-lg" name="nuevoEmail"
+                                    placeholder="Ingresar Email" required>
+                            </div>
+                        </div>
+
+                        <!-- Entrada Telefono-->
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-phone"></i></span>
+                                <input type="text" class="form-control input-lg" name="nuevoTelefono"
+                                    placeholder="Ingresar telefono" data-inputmask="'mask': '(999) 999-9999999'" data-mask required>
+                            </div>
+                        </div>
+
+                        <!-- Entrada Direccion-->
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-map-marker"></i></span>
+                                <input type="text" class="form-control input-lg" name="nuevaDireccion"
+                                    placeholder="Ingresar Direccion" required>
+                            </div>
+                        </div>
+
+                        <!-- Entrada Fecha de nacimiento-->
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                <input type="text" class="form-control input-lg" name="nuevaFechaNacimiento"
+                                    placeholder="Ingresar Fecha de nacimiento" data-inputmask="'alias': 'yyyy/mm/dd'" data-mask required>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PIE DE MODAL-->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Salir</button>
+                    <button type="submit" class="btn btn-primary"> Guardar Cliente</button>
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!--==============================
+MODAL EDITAR USUARIO
+===============================-->
+<div id="modalEditarUsuario" class="modal fade" role="dialog">
+
+    <div class="modal-dialog">
+
+        <div class="modal-content">
+
+            <form role="form" method="post" enctype="multipart/form-data">
+
+                <!-- CABEZA DE MODAL-->
+                <div class="modal-header" style="background:#3c8dbc; color:white">
+                    <button type="button" class="close" data-dismiss="modal">x</button>
+                    <h4 class="modal-title"> Editar Usuario </h4>
+                </div>
+
+                <!-- CUERPO DE MODAL-->
+                <div class="modal-body">
+                    <div class="box-body">
+
+                        <!-- Entrada Nombre-->
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                                <input type="text" class="form-control input-lg" id="editarNombre" name="editarNombre"
+                                    value="" required>
+                            </div>
+                        </div>
+
+                        <!-- Entrada Usuario-->
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-key"></i></span>
+                                <input type="text" class="form-control input-lg" id="editarUsuario" name="editarUsuario"
+                                    value="" readonly>
+                            </div>
+                        </div>
+
+                        <!-- Entrada Contraseña-->
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                                <input type="password" class="form-control input-lg" name="editarPassword"
+                                    placeholder="Ingresar nueva Contraseña" required>
+                                <input type="hidden" id="passwordActual" name="passwordActual">
+                            </div>
+                        </div>
+
+                        <!-- Entrada Perfil-->
+                        <div class="form-group">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-users"></i></span>
+                                <select class="form-control input-lg" name="editarPerfil">
+                                    <option value="" id="editarPerfil">Selecionar Perfil</option>
+                                    <option value="Administrador">Administrador</option>
+                                    <option value="Especial">Especial</option>
+                                    <option value="Vendedor">Vendedor</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Entrada foto-->
+                        <div class="form-group">
+                            <div class="panel">SUBIR FOTO</div>
+                            <input type="file" name="editarFoto" class="nuevaFoto">
+                            <p class="help-block">Peso Maximo de la foto 2 MB.</p>
+                            <img src="vistas/img/usuarios/default/usuario.png" alt="Foto Usuario" class="img-thumbnail previsualizar"
+                                width="100px">
+                            <input type="hidden" name="fotoActual" id="fotoActual">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PIE DE MODAL-->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default pull-left" data-dismiss="modal">Salir</button>
+                    <button type="submit" class="btn btn-primary"> Modificar Usuario</button>
+                </div>
+                
+                <?php
+                    $editarUsuario = new ControladorUsuarios();
+                    $editarUsuario -> ctrEditarUsuario();
+                ?> 
+
+            </form>
+
+        </div>
+
+    </div>
+
+</div>
+
+<?php
+    $borrarUsuario = new ControladorUsuarios();
+    $borrarUsuario -> ctrBorrarUsuario();
+?> 
